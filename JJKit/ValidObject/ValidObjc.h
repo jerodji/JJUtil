@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark - def
+#pragma mark - define
 
 #define IS_NULL(o)      [ValidObjc isNull:(o)]
 #define IS_EMPTY(o)     [ValidObjc isEmpty:(o)]
@@ -27,6 +27,7 @@
 #define SAFE_STRING(a) [ValidObjc safeStr:(a)]
 
 #define SPACE_STRING(obj) [ValidObjc constraintStr:(obj)]
+
 
 @interface ValidObjc : NSObject
 
