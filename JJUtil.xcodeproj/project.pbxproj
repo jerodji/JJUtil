@@ -24,6 +24,7 @@
 		38255BD72032B80D00FD989A /* UIView+viewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255BCE2032B80D00FD989A /* UIView+viewFrame.m */; };
 		38255BD82032B80D00FD989A /* UIViewController+XIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255BD02032B80D00FD989A /* UIViewController+XIB.m */; };
 		388004C5204F93C200FE9DD0 /* JJPublicDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 388004C3204F93C200FE9DD0 /* JJPublicDefine.m */; };
+		FA6C75AB25AED6E20055FD60 /* ValidObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C75AA25AED6E20055FD60 /* ValidObjc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +77,10 @@
 		38255BCE2032B80D00FD989A /* UIView+viewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+viewFrame.m"; sourceTree = "<group>"; };
 		38255BCF2032B80D00FD989A /* UIViewController+XIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XIB.h"; sourceTree = "<group>"; };
 		38255BD02032B80D00FD989A /* UIViewController+XIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XIB.m"; sourceTree = "<group>"; };
-		388004C3204F93C200FE9DD0 /* JJPublicDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJPublicDefine.m; path = JJUtils/JJPublicDefine.m; sourceTree = "<group>"; };
-		388004C4204F93C200FE9DD0 /* JJPublicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJPublicDefine.h; path = JJUtils/JJPublicDefine.h; sourceTree = "<group>"; };
+		388004C3204F93C200FE9DD0 /* JJPublicDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJPublicDefine.m; sourceTree = "<group>"; };
+		388004C4204F93C200FE9DD0 /* JJPublicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJPublicDefine.h; sourceTree = "<group>"; };
+		FA6C75A925AED6E20055FD60 /* ValidObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidObjc.h; sourceTree = "<group>"; };
+		FA6C75AA25AED6E20055FD60 /* ValidObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidObjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +111,7 @@
 		38255B822032B7B100FD989A = {
 			isa = PBXGroup;
 			children = (
-				388004C4204F93C200FE9DD0 /* JJPublicDefine.h */,
-				388004C3204F93C200FE9DD0 /* JJPublicDefine.m */,
+				FA6C75A725AED6570055FD60 /* JJKit */,
 				38255BC02032B80D00FD989A /* category */,
 				38255B8D2032B7B100FD989A /* JJUtil */,
 				38255BA62032B7B100FD989A /* JJUtilTests */,
@@ -131,6 +133,8 @@
 		38255B8D2032B7B100FD989A /* JJUtil */ = {
 			isa = PBXGroup;
 			children = (
+				388004C4204F93C200FE9DD0 /* JJPublicDefine.h */,
+				388004C3204F93C200FE9DD0 /* JJPublicDefine.m */,
 				38255B8E2032B7B100FD989A /* AppDelegate.h */,
 				38255B8F2032B7B100FD989A /* AppDelegate.m */,
 				38255B912032B7B100FD989A /* ViewController.h */,
@@ -183,6 +187,23 @@
 				38255BD02032B80D00FD989A /* UIViewController+XIB.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		FA6C75A725AED6570055FD60 /* JJKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA6C75A825AED67B0055FD60 /* ValidObject */,
+			);
+			path = JJKit;
+			sourceTree = "<group>";
+		};
+		FA6C75A825AED67B0055FD60 /* ValidObject */ = {
+			isa = PBXGroup;
+			children = (
+				FA6C75A925AED6E20055FD60 /* ValidObjc.h */,
+				FA6C75AA25AED6E20055FD60 /* ValidObjc.m */,
+			);
+			path = ValidObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +341,7 @@
 			files = (
 				38255BD52032B80D00FD989A /* UIView+control.m in Sources */,
 				38255BD32032B80D00FD989A /* UIColor+HexString.m in Sources */,
+				FA6C75AB25AED6E20055FD60 /* ValidObjc.m in Sources */,
 				38255B932032B7B100FD989A /* ViewController.m in Sources */,
 				38255BD82032B80D00FD989A /* UIViewController+XIB.m in Sources */,
 				38255B9E2032B7B100FD989A /* main.m in Sources */,
